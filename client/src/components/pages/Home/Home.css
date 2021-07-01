@@ -95,6 +95,12 @@
 	}
 }
 
+@media screen and (max-width: 700px) {
+	.home-main-container {
+		margin: 50px 10px;
+	}
+}
+
 /* original hover idea that was revealing text on hover */
 /* .convert-link-btn:hover,
 .substitute-link-btn:hover,
