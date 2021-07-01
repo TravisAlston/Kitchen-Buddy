@@ -24,8 +24,8 @@ const resolvers = {
       console.log('test auth', __filename, res.locals);
       return 'ok';
     },
-    user: async (parent, { username }) => {
-      return User.findOne({ username })
+    user: async (parent, { email }) => {
+      return User.findOne({ email })
         .select('-__v -password');
 
     }
@@ -34,7 +34,7 @@ const resolvers = {
   Mutation: {
     addUser: async (parent, args) => {
       const user = await User.create(args);
-      const token = signToken(user);
+      const token = auth.sign(user);
 
       return { token, user };
     },
@@ -50,23 +50,11 @@ const resolvers = {
         throw new AuthenticationError('Incorrect credentials');
       }
 
-      const { username, _id } = user;
-      const token = auth.sign({ username, email, _id });
+      const { _, _id } = user;
+      const token = auth.sign({ email, _id });
       return { token, user };
     },
-    addFriend: async (parent, { friendId }, context) => {
-      if (context.user) {
-        const updatedUser = await User.findOneAndUpdate(
-          { _id: context.user._id },
-          { $addToSet: { friends: friendId } },
-          { new: true }
-        ).populate('friends');
 
-        return updatedUser;
-      }
-
-      throw new AuthenticationError('You need to be logged in!');
-    }
   }
 };
 
