@@ -6,10 +6,11 @@ import { LOGIN_USER } from '../../utils/mutations';
 
 import './login.css';
 
-const Login = (props) => {
+const Login = () => {
     const [formState, setFormState] = useState({ email: '', password: '' });
 
     const [login, { error }] = useMutation(LOGIN_USER);
+    console.log(error);
 
     // update state based on form input changes
     const handleChange = (event) => {
@@ -48,7 +49,7 @@ const Login = (props) => {
     return (
         <main className='form-container'>
             <form onSubmit={handleFormSubmit}>
-                <h3>Log in</h3>
+                <h3>LOG IN</h3>
 
                 <div className="form-group">
                     <label>email</label>

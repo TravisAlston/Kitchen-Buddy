@@ -26,7 +26,7 @@ const units = [
 ];
 
 const Converter = () => {
-    console.log(convert(1).from('l').to('ml'));
+
     const [from, setFrom] = useState('');
     const [to, setTo] = useState('');
     const [convertVal, setConvertVal] = useState('');

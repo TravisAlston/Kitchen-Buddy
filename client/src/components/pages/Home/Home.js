@@ -45,7 +45,7 @@ const Home = () => {
 
             <div className="app-btn-container">
 
-                {btnInfo.map(p => <HomeBtn {...p} />)}
+                {btnInfo.map((p, index) => <HomeBtn key={index} {...p} />)}
 
 
 
