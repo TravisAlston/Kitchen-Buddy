@@ -8,7 +8,7 @@ import './signup.css';
 
 const SignUp = () => {
     // functionality
-    const [formState, setFormState] = useState({ username: '', email: '', password: '' });
+    const [formState, setFormState] = useState({ email: '', password: '' });
 
     const [addUser, { error }] = useMutation(ADD_USER);
 
@@ -49,18 +49,7 @@ const SignUp = () => {
             >
                 <h3>SIGN UP</h3>
 
-                <div className="form-group">
-                    <label>name</label>
-                    <input
-                        type="username"
-                        className="form-control"
-                        placeholder="First name"
-                        name='username'
-                        id='username'
-                        value={formState.username}
-                        onChange={handleChange}
-                    />
-                </div>
+
 
                 <div className="form-group">
                     <label>email</label>

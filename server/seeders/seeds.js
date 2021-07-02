@@ -1,26 +1,26 @@
-const faker = require('faker');
+// const faker = require('faker');
 
-const db = require('../config/connection');
-const { Thought, User } = require('../models');
+// const db = require('../config/connection');
+// const { Thought, User } = require('../models');
 
-db.once('open', async () => {
-  await Thought.deleteMany({});
-  await User.deleteMany({});
+// db.once('open', async () => {
+//   await Thought.deleteMany({});
+//   await User.deleteMany({});
 
-  // create user data
-  const userData = [];
+//   // create user data
+//   const userData = [];
 
-  for (let i = 0; i < 50; i += 1) {
-    const username = faker.internet.userName();
-    const email = faker.internet.email(username);
-    const password = faker.internet.password();
+//   for (let i = 0; i < 50; i += 1) {
+//     const username = faker.internet.userName();
+//     const email = faker.internet.email(username);
+//     const password = faker.internet.password();
 
-    userData.push({ username, email, password });
-  }
+//     userData.push({ username, email, password });
+//   }
 
-  const createdUsers = await User.collection.insertMany(userData);
+//   const createdUsers = await User.collection.insertMany(userData);
 
 
-  console.log('all done!');
-  process.exit(0);
-});
+//   console.log('all done!');
+//   process.exit(0);
+// });
