@@ -5,6 +5,7 @@
   - [Description](#Description)
   - [Deployed Application](#DeployedApplication)
   - [Screenshot](#Screenshot)
+  - [Technologies](#Technologies)
   - [Usage](#Usage)
   - [Contributors](#Contributors)
   - [GitHub Info](#GitHub) 
@@ -20,6 +21,17 @@
   # Screenshot
   ***
   [![kitchen-buddy-home.png](https://i.postimg.cc/g0wcCP6y/kitchen-buddy-home.png)](https://postimg.cc/06sqSFnr)
+  
+  # Description
+
+  -React
+  -NodeJS
+  -Passportjs
+  -GraphQL
+  -Mongoose
+  -MongoDB
+  -https://www.npmjs.com/package/convert-units
+  -https://developer.edamam.com/edamam-recipe-api
 
   # Usage
 
