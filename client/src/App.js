@@ -18,7 +18,7 @@ import Substitutes from './components/pages/Substitute/Substitute';
 
 
 const graphqlEndpoint = process.env.REACT_APP_GRAPHQL_ENDPOINT || 'http://localhost:3001/graphql';
-
+//config vars https://kitchen-buddy.herokuapp.com/graphql
 const httpLink = createHttpLink({
   uri: graphqlEndpoint,
 });
