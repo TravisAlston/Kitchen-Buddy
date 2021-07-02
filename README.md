@@ -26,10 +26,10 @@
 
   -React
   -NodeJS
-  -Passportjs
-  -GraphQL
+  -Express
   -Mongoose
-  -MongoDB
+  -GraphQL
+  -Passportjs
   -https://www.npmjs.com/package/convert-units
   -https://developer.edamam.com/edamam-recipe-api
 
