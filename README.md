@@ -24,14 +24,14 @@
   
   ## Description
 
-  -React
-  -NodeJS
-  -Express
-  -Mongoose
-  -GraphQL
-  -Passportjs
-  -https://www.npmjs.com/package/convert-units
-  -https://developer.edamam.com/edamam-recipe-api
+  - React
+  - NodeJS
+  - Express
+  - Mongoose
+  - GraphQL
+  - Passportjs
+  - https://www.npmjs.com/package/convert-units
+  - https://developer.edamam.com/edamam-recipe-api
 
   ## Usage
 
