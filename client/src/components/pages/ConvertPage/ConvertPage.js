@@ -38,7 +38,9 @@ const Converter = () => {
     const handleConversion = event => {
         event.preventDefault();
         try {
+
             if (convertVal && from && to) {
+
                 setResult(convert(convertVal).from(from).to(to));
 
             }
@@ -84,7 +86,7 @@ const Converter = () => {
                     </div>
 
                     <div className="returned-value-container" placeholder="result" >
-                        <div className="returned-value">{Number(result).toFixed(2)}</div>
+                        <div className="returned-value">{Number(result).toFixed(3)}</div>
                     </div>
 
                 </div>
