@@ -44,9 +44,10 @@ const Recipes = () => {
                         title={recipe.recipe.label}
                         calories={recipe.recipe.calories}
                         url={recipe.recipe.url}
-                        image={recipe.recipe.image}
+                        // image={recipe.recipe.image}
                         ingredients={recipe.recipe.ingredients}
-                        labels={recipe.recipe.healthLabels} />
+                    // labels={recipe.recipe.healthLabels} 
+                    />
                 ))}
             </div>
         </div>

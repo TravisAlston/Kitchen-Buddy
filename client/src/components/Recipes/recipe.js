@@ -1,5 +1,5 @@
 import React from 'react';
-import './Recipes.css'
+import './Recipes.css';
 
 const Recipe = ({ title, calories, url, image, ingredients, labels }) => {
     return (
@@ -18,9 +18,10 @@ const Recipe = ({ title, calories, url, image, ingredients, labels }) => {
                     <li>{ingredient.text}</li>
                 ))}
             </ol>
-            <p>{calories} Calories</p>
-            <a href={url}>{url}</a>
-            <img className='image' src={image} alt=""/>
+            <p>{Number(calories).toFixed(0)} Calories</p>
+            <a className='recipeURL' href={url}>{url}</a>
+            {/* images unused */}
+            {/* <img className='image' src={image} alt=""/> */}
         </div>
     );
 };

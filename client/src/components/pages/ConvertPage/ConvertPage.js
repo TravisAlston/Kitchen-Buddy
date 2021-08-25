@@ -40,6 +40,7 @@ const Converter = () => {
         try {
             if (convertVal && from && to) {
                 setResult(convert(convertVal).from(from).to(to));
+
             }
         }
         catch (err) {
@@ -83,7 +84,7 @@ const Converter = () => {
                     </div>
 
                     <div className="returned-value-container" placeholder="result" >
-                        <div className="returned-value">{result}</div>
+                        <div className="returned-value">{Number(result).toFixed(2)}</div>
                     </div>
 
                 </div>
